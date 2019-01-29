@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://nopac.com/spring-boot-soap/calcul">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <us:getAdditionRequest>
+            <us:valeur1>9</us:valeur1>
+            <us:valeur2>3</us:valeur2>
+        </us:getAdditionRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

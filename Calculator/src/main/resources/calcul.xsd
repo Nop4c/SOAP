@@ -1,0 +1,73 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://nopac.com/spring-boot-soap/calcul"
+           targetNamespace="http://nopac.com/spring-boot-soap/calcul"
+           elementFormDefault="qualified">
+
+    <xs:element name="getAdditionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valeur1" type="xs:int" />
+                <xs:element name="valeur2" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="getAdditionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resultat" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+      <xs:element name="getSoustractionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valeur1" type="xs:int" />
+                <xs:element name="valeur2" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+       <xs:element name="getSoustractionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resultat" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+     <xs:element name="getMultiplicationRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valeur1" type="xs:int" />
+                <xs:element name="valeur2" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+     <xs:element name="getMultiplicationResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resultat" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+      <xs:element name="getDivisionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="valeur1" type="xs:int" />
+                <xs:element name="valeur2" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+     <xs:element name="getDivisionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resultat" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
