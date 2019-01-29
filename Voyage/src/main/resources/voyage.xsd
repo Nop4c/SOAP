@@ -1,0 +1,57 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://nopac.com/spring-boot-soap/voyage"
+           targetNamespace="http://nopac.com/spring-boot-soap/voyage"
+           elementFormDefault="qualified">
+
+    <xs:element name="ListRequest">
+        <xs:complexType>
+            <xs:sequence>
+          
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+     
+    <xs:element name="ListResponse" >
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="resultat" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+ 
+     <xs:element name="PriceByCountryAndWeekRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="country" type="xs:string"/>
+                <xs:element name="week" type="xs:int"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+     
+    <xs:element name="PriceByCountryAndWeekResponse" >
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="resultat" type="xs:int" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+         <xs:element name="ListByDestinationRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="country" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+     
+    <xs:element name="ListByDestinationResponse" >
+        <xs:complexType>
+            <xs:sequence>
+ 				<xs:element maxOccurs="unbounded" minOccurs="0" name="resultat" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+ 
+ 
+</xs:schema>
